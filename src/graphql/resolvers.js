@@ -1,23 +1,12 @@
-/*
-const book = [
-  {
-    name: 'Eloquent JavaScript',
-    author: 'Marijn Haverbeke'
-  },
-  {
-    name: 'Aprendiendo Git',
-    author: 'Miguel Ángel Durán'
-  }
-]
-*/
+import { countryData, filteredSalary } from '../api/endpoints.js'
 
 export const resolvers = {
-  // endopints for the api
-  // Example:
-  // Query: {
-  //   books: () => book
-  // }
   Query: {
-    // books: () => book
+    countryDataByCountry: (root, args) => {
+      const { country } = args
+    },
+    filterSalaryByCountry: (root, args) => {
+      const { country } = args
+    }
   }
 }
