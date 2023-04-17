@@ -1,28 +1,28 @@
 export const typeDefs = `#graphql
   # Start Globals Types
   type Gender {
-    man: Number!
-    woman: Number!
-    noGender: Number!
+    man: Int!
+    woman: Int!
+    noGender: Int!
   }
 
   type Modality {
-    remote: Number!
-    office: Number!
-    hybrid: Number!
-    mostlyRemote: Number!
+    remote: Int!
+    office: Int!
+    hybrid: Int!
+    mostlyRemote: Int!
   }
 
   type Experience {
-    trainee: Number!
-    junior: Number!
-    senior: Number!
+    trainee: Int!
+    junior: Int!
+    senior: Int!
   }
 
   type Studies {
-    bootcamp: Number!
-    formal: Number!
-    self: Number!
+    bootcamp: Int!
+    formal: Int!
+    self: Int!
   }
 
   type ModalityAndExperience {
@@ -40,46 +40,46 @@ export const typeDefs = `#graphql
 
   # Start Country Data
   type TraineeModality {
-    remote: Number!
-    office: Number!
-    hybrid: Number!
-    mostlyRemote: Number!
+    remote: Int!
+    office: Int!
+    hybrid: Int!
+    mostlyRemote: Int!
   }
 
   type JuniorModality {
-    remote: Number!
-    office: Number!
-    hybrid: Number!
-    mostlyRemote: Number!
+    remote: Int!
+    office: Int!
+    hybrid: Int!
+    mostlyRemote: Int!
   }
 
   type SeniorModality {
-    remote: Number!
-    office: Number!
-    hybrid: Number!
-    mostlyRemote: Number!
+    remote: Int!
+    office: Int!
+    hybrid: Int!
+    mostlyRemote: Int!
   }
 
   type TraineeGender {
-    man: Number!
-    woman: Number!
-    noGender: Number
+    man: Int!
+    woman: Int!
+    noGender: Int
   }
 
   type JuniorGender {
-    man: Number!
-    woman: Number!
-    noGender: Number!
+    man: Int!
+    woman: Int!
+    noGender: Int!
   }
 
   type SeniorGender {
-    man: Number!
-    woman: Number!
-    noGender: Number!
+    man: Int!
+    woman: Int!
+    noGender: Int!
   }
 
   type AverageSalaries {
-    total: Number!
+    total: Float!
     gender: Gender!
     modality: Modality!
     experience: Experience!
@@ -89,7 +89,7 @@ export const typeDefs = `#graphql
   }
 
   type Count {
-    total: Number!
+    total: Int!
     gender: Gender!
     modality: Modality!
     experience: Experience!
@@ -110,9 +110,9 @@ export const typeDefs = `#graphql
 
   # Start Filter Salary
   type Result {
-    count: Number!
-    salary: Number!
-    happiness: Number!
+    count: Int!
+    salary: Int!
+    happiness: Float!
   }
 
   type filterSalary {
@@ -121,27 +121,27 @@ export const typeDefs = `#graphql
   # End Filter Salary
 
   enum Countries {
-    ARGENTINA
-    BOLIVIA
-    BRASIL
-    CHILE
-    COLOMBIA
-    COSTA RICA
-    CUBA
-    ECUADOR
-    EL SALVADOR
+    # ARGENTINA
+    # BOLIVIA
+    # BRASIL
+    # CHILE
+    # COLOMBIA
+    # COSTA_RICA
+    # CUBA
+    # ECUADOR
+    # EL_SALVADOR
     ESPANA
-    GUATEMALA
-    HAITI
-    HONDURAS
-    MEXICO
-    NICARAGUA
-    PANAMA
-    PARAGUAY
-    PERU
-    REPUBLICA DOMINICANA
-    URUGUAY
-    VENEZUELA
+    # GUATEMALA
+    # HAITI
+    # HONDURAS
+    # MEXICO
+    # NICARAGUA
+    # PANAMA
+    # PARAGUAY
+    # PERU
+    # REPUBLICA_DOMINICANA
+    # URUGUAY
+    # VENEZUELA
   }
 
   type Query {
