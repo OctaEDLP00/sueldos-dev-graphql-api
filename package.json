@@ -6,7 +6,7 @@
   "main": "src/main.js",
   "license": "MIT",
   "scripts": {
-    "graphql:nodemon": "nodemon src/main.js",
+    "graphql:dev": "nodemon src/main.js",
     "graphql": "node src/main.js"
   },
   "keywords": [],
