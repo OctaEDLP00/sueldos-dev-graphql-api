@@ -4,5 +4,6 @@ pnpm-lock.yaml
 package-lock.json
 yarn.lock
 
+src/scripts
 .temp
 _temp
