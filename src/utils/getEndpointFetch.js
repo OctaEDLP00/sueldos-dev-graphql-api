@@ -1,3 +1,1 @@
-export async function getEndpointFecth(url) {
-  return fetch(url).then(res => res.json()).then(res => res)
-}
+export const getEndpointFetch = async (url) => await fetch(url).then(res => res.json()).then(data => data)
