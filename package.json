@@ -1,16 +1,15 @@
 {
-  "name": "graphql-template",
+  "name": "sueldos-dev-graphql-api",
   "version": "1.0.0",
-  "description": "Template of GraphQL made by OctaEDLP00",
+  "description": "Version de GraphQL de la API (by OctaEDLP00) de sueldos.dev by Midudev",
   "type": "module",
   "main": "src/main.js",
   "license": "MIT",
   "scripts": {
     "graphql:dev": "nodemon src/main.js",
-    "graphql": "node src/main.js"
+    "graphql": "node src/main.js",
+    "json": "cd src/scripts && node reWriteFilesApi.js && cd .."
   },
-  "keywords": [],
-  "author": "",
   "dependencies": {
     "@apollo/server": "4.6.0",
     "graphql": "16.6.0"
